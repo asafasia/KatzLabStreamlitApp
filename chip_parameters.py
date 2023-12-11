@@ -1,7 +1,7 @@
 import streamlit as st
-import plotly.express as px
+# import plotly.express as px
 import numpy as np
-
+import matplotlib.pyplot as plt
 def chip_parameters():
     qubit_number = 5
     T1 = [50, 60, 70, 80, 90]
@@ -12,9 +12,17 @@ def chip_parameters():
 
     st.sidebar.title('Parameters')
     
-    fig = px.bar_polar(T1, r="frequency", theta="direction", color="strength", template="plotly_dark",
-                       color_discrete_sequence=px.colors.sequential.Plasma_r)
+    # fig = px.bar_polar(T1, r="frequency", theta="direction", color="strength", template="plotly_dark",
+    #                    color_discrete_sequence=px.colors.sequential.Plasma_r)
+    #
+    # fig = px.bar_polar(r=T1, theta=np.array([1, 2, 3, 4, 5]) * 360, template="plotly_dark",
+    #                    color_discrete_sequence=px.colors.sequential.Plasma_r)
+    # st.plotly_chart(fig)
+    x = np.linspace(0, 2 * np.pi, 100)
+    y = np.sin(x)
 
-    fig = px.bar_polar(r=T1, theta=np.array([1, 2, 3, 4, 5]) * 360, template="plotly_dark",
-                       color_discrete_sequence=px.colors.sequential.Plasma_r)
-    st.plotly_chart(fig)
+    # Streamlit app
+    st.title("Quantum Computing Plot")
+
+    # Display the Matplotlib plot
+    st.pyplot(plt.plot(x, y))
