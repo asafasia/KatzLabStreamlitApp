@@ -1,6 +1,6 @@
 import streamlit as st
 # import plotly.express as px
-# import numpy as np
+import numpy as np
 
 def chip_parameters():
     qubit_number = 5
