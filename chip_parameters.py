@@ -1,6 +1,6 @@
 import streamlit as st
-import plotly.express as px
-import numpy as np
+# import plotly.express as px
+# import numpy as np
 
 def chip_parameters():
     qubit_number = 5
@@ -15,6 +15,6 @@ def chip_parameters():
     # fig = px.bar_polar(T1, r="frequency", theta="direction", color="strength", template="plotly_dark",
     #                    color_discrete_sequence=px.colors.sequential.Plasma_r)
 
-    fig = px.bar_polar(r=T1, theta=np.array([1, 2, 3, 4, 5]) * 360, template="plotly_dark",
-                       color_discrete_sequence=px.colors.sequential.Plasma_r)
-    st.plotly_chart(fig)
+    # fig = px.bar_polar(r=T1, theta=np.array([1, 2, 3, 4, 5]) * 360, template="plotly_dark",
+    #                    color_discrete_sequence=px.colors.sequential.Plasma_r)
+    # st.plotly_chart(fig)
