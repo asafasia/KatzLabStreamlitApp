@@ -1,6 +1,5 @@
 import streamlit as st
-from main_page import main_page
-import numpy as np
+
 
 st.set_page_config(
     page_title="Hello",
