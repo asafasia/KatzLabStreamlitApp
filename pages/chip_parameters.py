@@ -19,14 +19,14 @@ st.sidebar.title('Parameters')
 # fig = px.bar_polar(r=T1, theta=np.array([1, 2, 3, 4, 5]) * 360, template="plotly_dark",
 #                    color_discrete_sequence=px.colors.sequential.Plasma_r)
 # st.plotly_chart(fig)
-x = np.linspace(0, 2 * np.pi, 100)
-y = np.sin(x)
+# x = np.linspace(0, 2 * np.pi, 100)
+# y = np.sin(x)
 
 
-fig = plt.figure()
+# fig = plt.figure()
 
-plt.plot(x,y)
+# plt.plot(x,y)
 
-with st.sidebar:
-    st.write("Check color")
-st.plotly_chart(fig)
+# with st.sidebar:
+#     st.write("Check color")
+# st.plotly_chart(fig)
