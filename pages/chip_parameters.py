@@ -17,10 +17,10 @@ x = np.linspace(0, 2 * np.pi, 100)
 y = np.sin(x)
 
 
-# fig = plt.figure()
+fig = plt.figure()
 
-# plt.plot(x,y)
+plt.plot(x,y)
 
-# with st.sidebar:
-#     st.write("Check color")
-# st.plotly_chart(fig)
+with st.sidebar:
+    st.write("Check color")
+st.plotly_chart(fig)
