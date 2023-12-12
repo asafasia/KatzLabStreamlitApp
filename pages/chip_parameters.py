@@ -2,6 +2,7 @@ import streamlit as st
 import numpy as np
 import matplotlib.pyplot as plt
 from utils.a import b
+import plotly.express as px
 
 qubit_number = 5
 T1 = [50, 60, 70, 80, 90]
