@@ -21,8 +21,11 @@ st.sidebar.title('Parameters')
 x = np.linspace(0, 2 * np.pi, 100)
 y = np.sin(x)
 
-# Streamlit app
-st.title("Quantum Computing Plot")
 
-# Display the Matplotlib plot
-st.pyplot(plt.plot(x, y))
+fig = plt.figure()
+
+plt.plot(x,y)
+
+with st.sidebar:
+    st.write("Check color")
+st.plotly_chart(fig)
