@@ -3,6 +3,7 @@ import numpy as np
 import matplotlib.pyplot as plt
 from utils.a import b
 
+print(b)
 
 qubit_number = 5
 T1 = [50, 60, 70, 80, 90]
