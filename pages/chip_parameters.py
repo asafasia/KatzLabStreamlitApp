@@ -21,6 +21,6 @@ fig = plt.figure()
 
 plt.plot(x,y)
 
-with st.sidebar:
-    st.write("Check color")
-st.plotly_chart(fig)
+
+# st.plotly_chart(fig)
+plt.show()
