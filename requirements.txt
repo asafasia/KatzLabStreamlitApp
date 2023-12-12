@@ -1,4 +1,4 @@
 streamlit
 numpy
-matplotlib==3.5.3
+matplotlib
 
